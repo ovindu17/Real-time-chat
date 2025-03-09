@@ -143,12 +143,7 @@ The application is configured for deployment on platforms like Render:
 - Group chat functionality
 - Read receipts and typing indicators
 - Push notifications for new messages
-- Advanced user matching algorithms
+- Advanced user matching algorithms using LLM APIs
 
-## License
 
-[Choose an appropriate license]
-
-## Contact
-
-[Your contact information] 
+ 
