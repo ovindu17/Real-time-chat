@@ -1,0 +1,174 @@
+.page-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar {
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-item {
+  font-size: 24px;
+  color: #919191;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+  color: #fd267d;
+}
+
+.nav-item.active {
+  color: #fd267d;
+}
+
+.profile-container {
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;  /* Increased from 70vh */
+  margin: 0;
+  background: white;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin-top: 60px;
+}
+
+.profile-container:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.profile-image {
+  width: 100%;
+  height: 85vh;  /* Increased from 70vh */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.profile-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+}
+
+.profile-info {
+  padding: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  z-index: 1;
+}
+
+h1 {
+  color: white;
+  font-size: 32px;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  margin: 6px 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+p strong {
+  color: white;
+  font-weight: 600;
+}
+
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+  justify-content: center;  /* Add this to center interests */
+  width: 100%;             /* Add this to ensure full width */
+}
+
+.interest-tag {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  backdrop-filter: blur(5px);
+  transition: all 0.2s ease;
+}
+
+.interest-tag:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.edit-button {
+  background: linear-gradient(45deg, #fd267d, #ff7854);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 10px rgba(253, 38, 125, 0.3);
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto 0;
+}
+
+.edit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(253, 38, 125, 0.4);
+}
+
+.edit-button:active {
+  transform: translateY(0);
+}
+
+.bio-container {
+  background: white;
+  padding: 20px;
+  margin-top: 0;  /* Changed from -60px */
+  position: relative;
+  z-index: 2;
+  min-height: 15vh;  /* Reduced from 30vh to accommodate larger profile section */
+}
+
+.bio-container h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.bio-container .bio-text {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  text-shadow: none;
+}

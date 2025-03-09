@@ -1,0 +1,101 @@
+.edit-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #fd267d, #ff7854);
+  padding: 20px;
+}
+
+.edit-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.edit-title {
+  color: #fd267d;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.edit-form .form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #424242;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+}
+
+.edit-form input,
+.edit-form select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e8e8e8;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  max-width: 300px;
+}
+
+.edit-form input:focus,
+.edit-form select:focus {
+  outline: none;
+  border-color: #fd267d;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: center;
+  max-width: 300px;
+  margin: 30px auto 0;
+}
+
+.save-button,
+.cancel-button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.save-button {
+  background: #fd267d;
+  color: white;
+}
+
+.cancel-button {
+  background: #e8e8e8;
+  color: #424242;
+}
+
+.save-button:hover,
+.cancel-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.save-button:active,
+.cancel-button:active {
+  transform: translateY(0);
+}
